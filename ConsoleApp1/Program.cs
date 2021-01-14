@@ -90,7 +90,6 @@ namespace ConsoleApp1
                 {
                     var received = await server.Receive();
                     Console.WriteLine(received.Message);
-                    //server.Reply("copy " + received.Message, received.Sender);
                     if (received.Message == "quit")
                         break;
                 }

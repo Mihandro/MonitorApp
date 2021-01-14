@@ -16,9 +16,11 @@ namespace MonitorApp
         public Form1()
         {
             InitializeComponent();
-            
-            Logger logger = new Logger();
-            logger.Start();
+
+            //Logger logger = new Logger();
+            //logger.Start();
+            TcpUser tcpUser = new TcpUser();
+            tcpUser.Start();
         }
 
         private void Form1_Load(object sender, EventArgs e)

@@ -56,11 +56,6 @@ namespace MonitorApp
 
     public class Logger
     {
-        public Logger()
-        {
-
-        }
-
         public void Start()
         {
             var client = Client.ConnectTo("127.0.0.1", 32123);
